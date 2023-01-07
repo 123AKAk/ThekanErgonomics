@@ -13,9 +13,11 @@ $dbname = 'thekaner_ecommerceweb';
 
 // Database Username
 $dbuser = 'thekaner_root';
+$dbuser = 'root';
 
 // Database Password
-$dbpass = 'thekaner_root';
+// $dbpass = 'thekaner_root';
+$dbpass = '';
 
 // Defining base url
 define("BASE_URL", "thekanergonomicsolutions.com");

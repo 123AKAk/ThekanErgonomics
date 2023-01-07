@@ -148,7 +148,8 @@ if($success_message1 != '') {
                         <li><?php echo $p_name; ?></li>
                     </ul>
                 </div>
-
+<br>
+<br>
 				<div class="product">
 					<div class="row">
 						<div class="col-md-5">
@@ -171,7 +172,10 @@ if($success_message1 != '') {
                                 ?>
 							</ul>
 							<div id="prod-pager">
-								<a data-slide-index="0" href=""><div class="prod-pager-thumb" style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>"></div></a>
+								<!-- <a data-slide-index="0" href="">
+                                    <div class="prod-pager-thumb" style="background-image: url(assets/uploads/<?php //echo $p_featured_photo; ?>">
+                                    </div>
+                                </a> -->
                                 <?php
                                 $i=1;
                                 $statement = $pdo->prepare("SELECT * FROM tbl_product_photo WHERE p_id=?");

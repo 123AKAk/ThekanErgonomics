@@ -87,7 +87,8 @@ foreach ($result as $row) {
 	<link rel="icon" type="image/png" href="assets/uploads/<?php echo $favicon; ?>">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -249,9 +250,9 @@ foreach ($result as $row) {
 
 <?php echo $after_body; ?>
 
-<!--<div id="preloader">-->
-<!--	<div id="status"></div>-->
-<!--</div>-->
+<div id="preloader">
+	<div id="status"></div>
+</div>
 
 <!-- top bar -->
 <div class="top" style="">

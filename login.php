@@ -1,4 +1,6 @@
-<?php require_once('header.php'); ?>
+<?php 
+ob_start();
+require_once('header.php'); ?>
 <!-- fetching row banner login -->
 <?php
 $statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
@@ -40,6 +42,7 @@ if(isset($_POST['form1'])) {
                 } else {
                     $_SESSION['customer'] = $row;
                      echo '<script>window.location.replace("'.BASE_URL.'+dashboard.php");"<script>';
+                     exit;
                     //header("location: dashboard.php");
                 }
             }

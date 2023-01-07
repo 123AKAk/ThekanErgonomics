@@ -39,8 +39,8 @@ if(isset($_POST['form1'])) {
                     $error_message .= LANG_VALUE_148.'<br>';
                 } else {
                     $_SESSION['customer'] = $row;
-                    // echo '<script>window.location.replace("'.BASE_URL.'+dashboard.php");"<script>';
-                    header("location: dashboard.php");
+                     echo '<script>window.location.replace("'.BASE_URL.'+dashboard.php");"<script>';
+                    //header("location: dashboard.php");
                 }
             }
             
@@ -62,7 +62,7 @@ if(isset($_POST['form1'])) {
                 <div class="user-content">
 
                     
-                    <form action="" method="post">
+                    <form action="login.php" method="post">
                         <?php $csrf->echoInputField(); ?>                  
                         <div class="row">
                             <div class="col-md-4"></div>
